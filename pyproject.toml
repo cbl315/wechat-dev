@@ -1,11 +1,20 @@
 [project]
-name = "wechat-dev"
+name = "wechat-bot"
 version = "0.1.0"
-description = "Add your description here"
+description = "微信接龙机器人 - 自动在微信群中发送定时接龙消息"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "apscheduler>=3.11.0",
     "itchat>=1.3.10",
     "jinja2>=3.1.6",
+    "pytz>=2024.1",
+    "requests>=2.31.0",
 ]
+
+[project.scripts]
+wechat-bot = "scripts.run_bot:main"
+wechat-config = "scripts.config_cli:main"
+
+[tool.uv.sources]
+wechat-bot = { path = "src" }

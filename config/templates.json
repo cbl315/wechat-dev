@@ -1,0 +1,21 @@
+{
+  "default": {
+    "template": "【羽毛球活动报名】\n时间：{{date}} {{weekday}} {{time}}\n地点：{{location}}\n费用：{{price}}\n\n报名接龙：\n1. \n2. \n3. ",
+    "variables": {
+      "time": "19:00-21:00",
+      "location": "XX羽毛球馆",
+      "price": "30元/人",
+      "date": "2025-10-01",
+      "weekday": "周三",
+      "timestamp": "01:01:43"
+    }
+  },
+  "test": {
+    "template": "【测试活动】\n时间：{{date}} {{weekday}} {{time}}\n地点：{{location}}\n备注：{{note}}\n\n报名接龙：\n1. \n2. \n3. ",
+    "variables": {
+      "time": "20:00-22:00",
+      "location": "测试场馆",
+      "note": "这是一个测试活动"
+    }
+  }
+}
