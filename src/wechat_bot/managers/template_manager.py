@@ -56,6 +56,10 @@ class TemplateManager:
         """获取模板配置"""
         return self.templates.get(template_name)
 
+    def get_all_templates(self):
+        """获取所有模板"""
+        return self.templates
+
     def add_template(self, template_name, template_content, variables=None):
         """添加新模板"""
         if variables is None:

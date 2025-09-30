@@ -73,7 +73,7 @@ class ConfigManagerCLI:
         if templates:
             print("当前可用模板:")
             for name, template in templates.items():
-                print(f"  - {name}: {template['content'][:50]}...")
+                print(f"  - {name}: {template['template'][:50]}...")
         else:
             print("当前没有可用的模板")
 

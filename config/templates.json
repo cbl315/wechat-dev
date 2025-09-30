@@ -7,7 +7,7 @@
       "price": "30元/人",
       "date": "2025-10-01",
       "weekday": "周三",
-      "timestamp": "01:01:43"
+      "timestamp": "01:21:09"
     }
   },
   "test": {
@@ -16,6 +16,15 @@
       "time": "20:00-22:00",
       "location": "测试场馆",
       "note": "这是一个测试活动"
+    }
+  },
+  "custom_template": {
+    "template": "【自定义活动】",
+    "variables": {
+      "time": "时间：{{date}} {{weekday}} {{time}}",
+      "location": "地点：{{location}}",
+      "price": "费用：{{price}}",
+      "note": "备注：{{note}}"
     }
   }
 }
